@@ -1,7 +1,7 @@
 <?php 
  session_set_cookie_params([
             'lifetime' => 60*60,
-            'path' => '/~rv8/MC',
+            'path' => '/~rv8/cs490',
             'domain' => $_SERVER['HTTP_HOST'],
             'secure' => true,
             'httponly' => true,
@@ -24,8 +24,7 @@
         <li><a href="register.php">Register</a></li>
         <?php endif;?>
         <?php if(is_logged_in()):?>
-        <li><a href="home.php">Home</a></li>
-        <li><a href="game.php">Game</a></li>
+        <li><a href="home.php">Home</a></li>        
         <li><a href="profile.php">Profile</a></li>
         <li><a href="logout.php">Logout</a></li>
         <?php endif;?>
