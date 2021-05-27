@@ -59,10 +59,7 @@ function get_username()
     }
     return "";
 }
-function startGameLG(){
-    $_SESSION["paddleHeight"] = 100;
-    $_SESSION["ballSpeed"] = 2;
-}
+
 function mysql_error_info($db)
 {
     if ($db != null) {
@@ -87,40 +84,3 @@ function mysql_error_info($db)
     }
 }
 
-function getScores($db, $user_id = -1, $type = "lifetime")
-{
-    //$type weekly, monthly, lifetime
-    $query = "SELECT s.score, u.username, u.id, s.created FROM rv8_users u JOIN mt_scores s on u.id = s.user_id";
-    if ($user_id > -1) {
-        $user_id = mysqli_real_escape_string($db, $user_id);
-    
-        $query .= " WHERE user_id = $user_id";
-    }
-    switch ($type) {
-        case "lifetime":
-            break;
-        case "weekly":
-            $query .= " AND s.created >= DATE_SUB(NOW(), INTERVAL 1 WEEK) ";
-            break;
-        case "monthly":
-            $query .= " AND s.created >= DATE_SUB(NOW(), INTERVAL 1 MONTH) ";
-            break;
-        default:
-            break;
-    }
-    $query .= " order by s.score desc, s.created desc LIMIT 10";
-    $retVal = mysqli_query($db, $query);
-
-    $results = [];
-    if ($retVal) {
-     
-        if (mysqli_num_rows($retVal) > 0) {
-            while ($row = mysqli_fetch_assoc($retVal)) {
-                array_push($results, $row);
-            }
-        }
-        //mysqli_close($db);
-    }
-    return $results;
-}
-© 2021 GitHub, Inc.
