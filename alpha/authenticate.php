@@ -43,10 +43,33 @@ if (isset($_REQUEST["email"])) {
     mysqli_close($db);
 }
 ?>
-<form method="POST">
-    <label>Email/Username</label>
-    <input type="text" name="email" />
-    <label>Password</label>
-    <input type="password" name="password" />
-    <input type="submit" value="Login" />
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta http-equiv=" X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <img class="avatar" src="../images/User-male-02.svg" alt="user-logo">
+        <h2>Log in Form</h2>
+        <form class="form" method="POST">
+            <label>Email/Username</label>
+            <input class="email" type="text" name="email" autocomplete="off" required />
+            <label>Password</label>
+            <input class="password" type="password" name="password" autocomplete="off" required />
+            <input type="submit" value="Login" />
+        </form>
+        <form class="form" action="register.php" method="POST">
+            <input id="register" type="submit" value="Register" />
+        </form>
+    </div>
+</body>
+
+</html>
