@@ -1,6 +1,6 @@
 # CS490-myApp
 
-Front: 
+Front: Anis Shili
 
 Mid:
 
