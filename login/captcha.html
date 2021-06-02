@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="../styles/look.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <img src="captcha_image.php" alt="Captcha-image" id="captcha-image">
+        <br>
+        <div class="fields">
+            <form action="c-verified.php" method="POST">
+                <span> Enter captcha &nbsp; </span>
+                <input class="captcha" type="text" name="guess" autocomplete="off"> <br>
+                <span>Enter your ucid </span>
+                <input class="ucid" type="text" name="ucid" autocomplete="off"> <br>
+                <span>Enter Amount &nbsp;</span>
+                <input class="captcha" type="text" name="amount" autocomplete="off"><br><br>
+                <button type="submit" id="submit-btn">Submit</button>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
