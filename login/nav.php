@@ -13,7 +13,7 @@ $sidvalue = session_id();
 //echo "<br>Your session id: " . $sidvalue . "<br>";
 require(__DIR__ . "/../lib/myFunctions.php");
 ?>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles/header.css">
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 

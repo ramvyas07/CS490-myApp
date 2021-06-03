@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f4f5f7;
 }
 
 .wrapper {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
@@ -19,7 +20,6 @@ body {
 .wrapper {
   text-align: center;
   width: 500px;
-  padding: 30px;
   margin: auto;
   margin-top: 5%;
   background-color: #ecf0f3;
@@ -35,7 +35,7 @@ body {
   overflow: hidden;
   top: calc(-80px / 2);
   left: calc(50% - 40px);
-  border: 4px dotted red;
+  border: 4px dotted orange;
 }
 
 .wrapper h2 {
@@ -54,7 +54,6 @@ body {
 
 .wrapper input {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .wrapper input[type='text'],
@@ -92,7 +91,7 @@ body {
   height: 80%;
 }
 #register {
-  background-color: rgb(19, 19, 194);
+  background-color: cadetblue;
 }
 
 input {

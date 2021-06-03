@@ -138,7 +138,7 @@ function validate(form) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="../styles/look.css">
+    <link rel="stylesheet" href="../styles/register.css">
 </head>
 
 <body>
@@ -146,11 +146,6 @@ function validate(form) {
 
         <div class="fields">
             <h2>Registration form</h2>
-
-
-
-
-
 
             <svg class="car" width="868" height="267" viewBox="0 0 868 267" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -408,42 +403,39 @@ function validate(form) {
             </svg>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <form method="POST" onsubmit="return validate(this);">
-                <label>Email</label>
-                <input class="email" type="text" name="email" required autocomplete="off" />
-                <span id="vEmail"></span>
+                <div>
+                    <label>Email</label>
 
-                <label>Username</label>
-                <input class="username" type="text" name="username" required autocomplete="off" />
-                <span id="vUsername"></span>
-                <label>Password</label>
-                <input class="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 6 or more characters"
-                    name="password" required />
-                <span id="vPassword"></span>
-                <label>Confirm Password</label>
-                <input class="password" type="password" name="confirm" required />
-                <span id="vConfirm"></span>
+                </div>
+                <div>
+                    <input class="email" type="text" name="email" required autocomplete="off" />
+                    <span id="vEmail"></span>
+                </div>
+                <div>
+                    <label>Username</label>
+                </div>
+
+                <div>
+                    <input class="username" type="text" name="username" required autocomplete="off" />
+                    <span id="vUsername"></span>
+                </div>
+                <div>
+                    <label>Password</label>
+                </div>
+                <div>
+                    <input class="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 6 or more characters"
+                        name="password" required />
+                    <span id="vPassword"></span>
+                </div>
+                <div>
+                    <label>Confirm Password</label>
+                </div>
+                <div>
+                    <input class="password" type="password" name="confirm" required />
+                    <span id="vConfirm"></span>
+                </div>
 
                 <input id="submit-btn" type="submit" value="Register" />
             </form>
