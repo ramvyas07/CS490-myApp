@@ -68,6 +68,7 @@ if (isset($_REQUEST["email"])) {
     //$retVal = mysqli_query($db, $sql);
     if ($retVal) {
         echo "Welcome to the club";
+        die(header("Location: authenticate.php"));
     } else {
         echo mysql_error_info($db);
         //"practical" regex example
