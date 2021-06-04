@@ -2,6 +2,6 @@
 
 Front: Anis Shili
 
-Mid:
+Mid: Rizwana Bunglawala
 
-Backend:
+Backend: Ram Vyas

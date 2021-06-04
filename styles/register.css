@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f5f7;
+  text-align: center;
+}
+
+#captcha-image {
+  border-radius: 20px;
+}
+
+#wrapper {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  margin-top: 5%;
+  background-color: #ecf0f3;
+  box-shadow: 13px 13px 20px#cbced1, -13px -13px 20px #cbced1;
+  border-radius: 45px;
+}
+
+.fields {
+  width: 100%;
+  padding: 75px 5px 5px 5px;
+}
+
+.fields input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 5px 10px 10px 5px;
+}
+
+.email,
+.username,
+.password {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  text-align: center;
+  width: auto;
+}
+
+#submit-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  text-align: center;
+  background: cadetblue;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: 0.5s;
+  width: 80%;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.car {
+  width: 400px;
+  height: 170px;
+}
+
+#frontWheel {
+  animation: wheel 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#backWheel {
+  animation: wheel 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#car {
+  animation: car 2s ease infinite;
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+label {
+  font-weight: 700;
+  font-size: large;
+}
