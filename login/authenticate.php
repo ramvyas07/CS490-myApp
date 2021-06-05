@@ -15,6 +15,7 @@ if (isset($_REQUEST["email"])) {
   //mysqli still wants the single quotes in the query so can't just drop in the variables post-escape
   $sql = "SELECT id, email, password, username from rv8_users where email = '$email' OR username = '$email' LIMIT 1";
   $retVal = mysqli_query($db, $sql);
+  //check username:
   if ($retVal) {
     $result = mysqli_fetch_array($retVal, MYSQLI_ASSOC);
     var_export($result);
@@ -23,8 +24,10 @@ if (isset($_REQUEST["email"])) {
         echo "<br>";
         echo "Hey you logged in!";
         unset($result["password"]);
-        //session_start();
+        session_start();
         $_SESSION["user"] = $result;
+		$_SESSION["username"] = $result['username'];
+		
         //uncomment below to have an example of malicious user data
         ///$_SESSION["user"]["email"] = "<script>alert('The cookie monster has your cookies!' + document.cookie);</script>";
         die(header("Location: home.php"));
