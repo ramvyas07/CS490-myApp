@@ -22,7 +22,8 @@ if ($retVal) {
 }
 
 ?>
-
+<html>
+<body>
 <h1>Home</h1>
 
 <?php if($isMe):?>
@@ -37,3 +38,22 @@ if ($retVal) {
         </div>
     <?php endif;?>
     <?php endif;?>
+
+    <div>
+	<div id="insert_post" >
+		<center>
+		<form action="home.php?id=<?php echo $user_id; ?>" method="post" id="postForm" enctype="multipart/form-data">
+		<textarea class="form-control" id="content" rows="4" name="content" placeholder="Post"></textarea><br>
+		<label  id="upload_image_button">Add
+		<input type="file" name="upload_image" size="30">
+		</label><br>
+		<button id="btn-post"  name="submitPost">Post</button>
+		</form>
+		<?php insertPost($db); ?>
+        <br>
+        <?php getPost($db); ?>
+		</center>
+	</div>
+
+</body>
+</html>
