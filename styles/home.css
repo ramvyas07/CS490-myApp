@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main_admin,
+.main_reg {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 5px;
+}
+.search {
+  background-color: #f4f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  background-color: #f4f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.api {
+  background-color: chocolate;
+}
+
+textarea {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 10px 10px 5px;
+  border-radius: 10px;
+  resize: none;
+}
+form {
+  text-align: center;
+  margin: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#btn-post {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 1.7em;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  margin: 20px;
+}
+
+.add_post {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#image_upload {
+  margin: 5px;
+}
+img {
+  width: 700px;
+  height: 30%;
+}
+
+.btn-comment {
+  background-color: hsl(189, 36%, 45%);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+  padding: 5px;
+}
+
+.search h3 {
+  padding: 5px;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.search_people {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  text-align: center;
+  width: auto;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 5px;
+}
+.username {
+  font-size: larger;
+  font-weight: bold;
+  color: #100b96;
+}
+.username,
+.email {
+  text-align: center;
+}
+.user {
+  padding: 10px;
+}
+
+.btn-search {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 1.7em;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(40deg, #15964b, #7873f5);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  margin: 20px;
+}

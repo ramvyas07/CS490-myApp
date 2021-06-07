@@ -26,8 +26,7 @@ if (isset($_REQUEST["email"])) {
         unset($result["password"]);
         session_start();
         $_SESSION["user"] = $result;
-		$_SESSION["username"] = $result['username'];
-		
+        $_SESSION["username"] = $result['username'];
         //uncomment below to have an example of malicious user data
         ///$_SESSION["user"]["email"] = "<script>alert('The cookie monster has your cookies!' + document.cookie);</script>";
         die(header("Location: home.php"));
@@ -37,8 +36,7 @@ if (isset($_REQUEST["email"])) {
         echo "You're not you, go away";
       }
     } else {
-      echo "User or email not found";
-      echo "<script> alert('Wrong Credentials')</script>";
+      echo "<div class='login_error'>User or email not found</div>";
     }
   } else {
     echo "Something didn't work out " . mysqli_error($db);

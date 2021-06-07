@@ -1,0 +1,17 @@
+.wrapper {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 10%;
+  background-color: #ecf0f3;
+  box-shadow: 13px 13px 20px gray, -13px -13px 20px gray;
+  border-radius: 45px;
+  padding: 3rem;
+}
+
+p {
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgb(20, 76, 78);
+  padding: 1rem;
+}
