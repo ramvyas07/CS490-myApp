@@ -501,7 +501,7 @@ function getProPost($db, $userID)
 
 						</div>
 						<div class='col-sm-6'>
-							<h3><a style='text-decoration:none; cursor:pointer;color #3897f0;' href='profile.php?id=$user_id'>$user</a></h3>
+							<h3><a style='text-decoration:none; cursor:pointer;color #3897f3;' href='profile.php?id=$user_id'>$user</a></h3>
 						</div>
 						<div class='col-sm-4'>
 						</div>
