@@ -18,11 +18,12 @@ getPostCom($db, $get_id);
 </head>
 
 <body>
-
-    <form action='comments.php?post_id=<?php echo "$get_id"; ?>' method="POST" >
+    <?php getComment($db, $get_id); ?>
+    <form action='comments.php?post_id=<?php echo "$get_id"; ?>' method="POST">
         <textarea class="form-control" id="comment" rows="6" name="comment" placeholder="Comment"></textarea><br>
         <input type="submit" name="submitCom" value="Comment">
     </form>
+    <?php saveComments($db, $get_id); ?>
 
 </body>
 
