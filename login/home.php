@@ -122,7 +122,17 @@ if ($retVal) {
     </div>
 
 </main>
-<aside class="api">API</aside>
+<aside class="api">
+    <section>
+        <link rel="stylesheet" href="../styles/api.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <h3>Cars Data</h3>
+        <div id="cars"></div>
+        <script src="./index.js"></script>
+    </section>
+
+</aside>
 </div>
 </div>
 <?php endif; ?>
