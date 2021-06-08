@@ -28,6 +28,7 @@ require(__DIR__ . "/../lib/myFunctions.php");
         <li><a href="home.php">Home</a></li>
         <li><a href="profile.php">Profile</a></li>
         <li><a href="search.php">Search</a></li>
+        <li><a href="message.php">Message</a></li>
         <li><a href="logout.php">Logout</a></li>
         <?php endif; ?>
     </ul>
