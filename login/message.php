@@ -90,7 +90,7 @@ $s = "select * from rv8_users";
 		{
 			echo"
 			<br>
-			<form action='message.php?user_name=@u_sent' method='POST'><center>
+			<form action='message.php?user_name=$u_sent' method='POST'><center>
 			<textarea class='form-control' placeholder='Enter your Message'
 			 name='msg_box' id='msg_textarea'></textarea>
 			<input type='submit' name='send_msg' value='send'>
